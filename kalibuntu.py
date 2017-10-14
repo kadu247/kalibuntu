@@ -10,15 +10,14 @@ def inicio():
     try:
         if not os.geteuid() == 0:
             os.system('clear')
-            print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+            print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------
              
-      Tens que ter privilégio root
+      \033[31mTens que ter privilégio root\033[m
        
-        → ex: sudo ./kalibuntu ←
+        → ex: \033[32msudo ./kalibuntu\033[m ←
             ''')
 
         else:
@@ -26,11 +25,10 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
             def menu():
                 while True:
                     os.system('clear')
-                    print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                    print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------                    
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------                    
                     
 (1) Adicionar/Remover repositório do kali linux 
 (2) Ver categorias
@@ -40,11 +38,10 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                     opcao = input('↳ ')
                     while opcao == '1':
                         os.system('clear')
-                        print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                        print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------                    
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------                    
                     
 (1) ADICIONAR repositório kali linux
 (2) REMOVER repositório kali linux
@@ -101,30 +98,28 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                     while opcao == '2':
                         def catmenu():
                             os.system('clear')
-                            print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                            print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------
 
-(1) Information Gathering     (8) Exploitation Tools
-(2) Vulnerability Analysis    (9) Forensics Tools
-(3) Wireless Attacks         (10) Stress Testing
-(4) Web Applications         (11) Password Attacks
-(5) Sniffing & Spoofing      (12) Reverse Engineering
-(6) Maintaining Access       (13) Hardware Hacking
-(7) Reporting Tools          (14) Extra
+(1) Obtenção de Informação       (8) Ferramentas de esploração
+(2) Análise de Vulnerabilidade   (9) Ferramentas Forenses
+(3) Ataque a Redes Wireless     (10) Testes de Stress
+(4) Aplicações Web              (11) Ataques a Passwords
+(5) Sniffing e Spoofing         (12) Engenharia Reversa
+(6) Manutenção de Acessos       (13) Modificações a Hardware
+(7) Ferramentas de ralatórios   (14) Extra
 
 (0) Voltar
                         ''')
                             cat = input('↳ ')
                             while cat == '1':
                                 os.system('clear')
-                                print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                                print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------
 
  (1) acccheck             (30) lbd
  (2) ace-voip             (31) Maltego Teeth
@@ -161,460 +156,460 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                                 opcao01 = input('↳ ')
                                 if opcao01 == '1':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '2':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '3':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '4':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '5':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '6':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '7':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '8':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '9':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '10':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '11':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '12':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '13':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '14':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '15':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '16':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '17':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '18':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '19':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '20':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '21':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '22':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '23':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '24':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '25':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '26':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '27':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '28':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '29':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '30':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '31':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '32':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '33':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '34':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '35':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '36':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '37':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '38':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '39':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '40':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '41':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '42':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '43':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '44':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '45':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '46':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '47':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '48':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '49':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '50':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '51':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '52':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '53':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '54':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '55':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '56':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao01 == '57':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)                                                    
                                 elif opcao01 == '0':
                                     catmenu()
                                 else:
@@ -623,11 +618,10 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                             
                             while cat == '2':
                                 os.system('clear')
-                                print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                                print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------
 
  (1) BBQSQL                         (18) Nmap
  (2) BED                            (19) ohrwurm
@@ -659,6 +653,278 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                                     # os.system('apt install ...')        # Comando para instalar
                                     # print('OK')                         # Confirmação
                                     time.sleep(3)
+                                elif opcao02 == '2':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '3':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '4':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '5':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '6':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '7':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '8':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '9':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '10':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '11':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '12':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '13':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '14':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '15':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '16':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '17':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '18':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '19':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '20':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '21':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '22':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '23':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '24':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '25':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '26':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '27':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '28':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '29':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '30':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '31':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '32':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '33':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '34':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao02 == '35':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)                                
                                 elif opcao02 == '0':
                                     catmenu()
                                 else:
@@ -666,28 +932,27 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                                     time.sleep(2)
                             while cat == '3':
                                 os.system('clear')
-                                print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                                print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------
 
- (1) Aircrack-ng         (17) kalibrate-rtl
- (2) Asleap              (18) KillerBee
- (3) Bluelog             (19) Kismet
- (4) BlueMaho            (20) mdk3
- (5) Bluepot             (21) mfcuk
- (6) BlueRanger          (22) mfoc
- (7) Bluesnarfer         (23) mfterm
- (8) Bully               (24) Multimon-NG
- (9) coWPAtty            (25) PixieWPS
-(10) crackle             (26) Reaver
-(11) eapmd5pass          (27) redfang
-(12) Fern Wifi Cracker   (28) RTLSDR Scanner
-(13) Ghost Phisher       (29) Spooftooph
-(14) GISKismet           (30) Wifi Honey
-(16) gr-scan             (31) Wifitap 
-                         (32) Wifite 
+ (1) Aircrack-ng         (16) kalibrate-rtl
+ (2) Asleap              (17) KillerBee
+ (3) Bluelog             (18) Kismet
+ (4) BlueMaho            (19) mdk3
+ (5) Bluepot             (20) mfcuk
+ (6) BlueRanger          (21) mfoc
+ (7) Bluesnarfer         (22) mfterm
+ (8) Bully               (23) Multimon-NG
+ (9) coWPAtty            (24) PixieWPS
+(10) crackle             (25) Reaver
+(11) eapmd5pass          (26) redfang
+(12) Fern Wifi Cracker   (27) RTLSDR Scanner
+(13) Ghost Phisher       (28) Spooftooph
+(14) GISKismet           (39) Wifi Honey
+(15) gr-scan             (30) Wifitap 
+                         (31) Wifite 
 				
 (0) Voltar
                                 ''')
@@ -712,16 +977,146 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                                     time.sleep(2)
                                 elif opcao03 == '4':
                                     os.system('clear')
-                                    print('A instalar BlueMaho\n')             
+                                    print('A colonar BlueMaho\n')             
                                     os.system('apt install git && git clone git://git.kali.org/packages/bluemaho.git')        
                                     print('\nOK')                   
                                     time.sleep(2)
                                 elif opcao03 == '5':
                                     os.system('clear')
-                                    print('A instalar \n')             
-                                    os.system('apt install ')        
+                                    print('A colonar Bluepot\n')             
+                                    os.system('apt install git && git clone git://git.kali.org/packages/bluepot.git')        
                                     print('\nOK')                   
                                     time.sleep(2)
+                                elif opcao03 == '3':
+                                    os.system('clear')
+                                    print('A instalar Blueranger\n')             
+                                    os.system('apt install blueranger')        
+                                    print('\nOK')   
+                                elif opcao03 == '7':
+                                    os.system('clear')
+                                    print('A instalar Bluesnarfer\n')             
+                                    os.system('apt install bluesnarfer')        
+                                    print('\nOK')   
+                                elif opcao03 == '8':
+                                    os.system('clear')
+                                    print('A instalar Bully\n')             
+                                    os.system('apt install bully')        
+                                    print('\nOK')
+                                elif opcao03 == '9':
+                                    os.system('clear')
+                                    print('A instalar coWPAtty\n')             
+                                    os.system('apt install cowpatty')        
+                                    print('\nOK')
+                                elif opcao03 == '10':
+                                    os.system('clear')
+                                    print('A instalar crackle\n')             
+                                    os.system('apt install crackle')        
+                                    print('\nOK')
+                                elif opcao03 == '11':
+                                    os.system('clear')
+                                    print('A instalar eapmd5pass\n')             
+                                    os.system('apt install eapmd5pass')        
+                                    print('\nOK')
+                                elif opcao03 == '12':
+                                    os.system('clear')
+                                    print('A instalar Fern Wifi Cracker\n')             
+                                    os.system('apt install fern-wifi-cracker')        
+                                    print('\nOK')
+                                elif opcao03 == '13':
+                                    os.system('clear')
+                                    print('A instalar Ghost Phisher\n')             
+                                    os.system('apt install ghost-phisher')        
+                                    print('\nOK')
+                                elif opcao03 == '14':
+                                    os.system('clear')
+                                    print('A instalar GISKismet\n')             
+                                    os.system('apt install giskismet')        
+                                    print('\nOK')
+                                elif opcao03 == '15':
+                                    os.system('clear')
+                                    print('A colonar gr-scan\n')             
+                                    os.system('apt install git && git clone git://git.kali.org/packages/gr-scan.git')        
+                                    print('\nOK')
+                                elif opcao03 == '16':
+                                    os.system('clear')
+                                    print('A instalar kalibrate-rtl\n')             
+                                    os.system('apt install kalibrate-rtl')        
+                                    print('\nOK')
+                                elif opcao03 == '17':
+                                    os.system('clear')
+                                    print('A instalar KillerBee\n')             
+                                    os.system('apt install killerbee')        
+                                    print('\nOK')
+                                elif opcao03 == '18':
+                                    os.system('clear')
+                                    print('A instalar Kismet\n')             
+                                    os.system('apt install kismet')        
+                                    print('\nOK')
+                                elif opcao03 == '19':
+                                    os.system('clear')
+                                    print('A instalar mdk3\n')             
+                                    os.system('apt install mdk3')        
+                                    print('\nOK')
+                                elif opcao03 == '20':
+                                    os.system('clear')
+                                    print('A instalar mfcuk\n')             
+                                    os.system('apt install mfcuk')        
+                                    print('\nOK')
+                                elif opcao03 == '21':
+                                    os.system('clear')
+                                    print('A instalar mfoc\n')             
+                                    os.system('apt install mfoc')        
+                                    print('\nOK')
+                                elif opcao03 == '22':
+                                    os.system('clear')
+                                    print('A instalar mfterm\n')             
+                                    os.system('apt install mfterm')        
+                                    print('\nOK')
+                                elif opcao03 == '23':
+                                    os.system('clear')
+                                    print('A instalar Multimon-NG\n')             
+                                    os.system('apt install multimon-ng')        
+                                    print('\nOK')
+                                elif opcao03 == '24':
+                                    os.system('clear')
+                                    print('A instalar PixieWPS\n')             
+                                    os.system('apt install pixiewps')        
+                                    print('\nOK')
+                                elif opcao03 == '25':
+                                    os.system('clear')
+                                    print('A instalar Reaver\n')             
+                                    os.system('apt install reaver')        
+                                    print('\nOK')
+                                elif opcao03 == '26':
+                                    os.system('clear')
+                                    print('A instalar redfang\n')             
+                                    os.system('apt install redfang')        
+                                    print('\nOK')
+                                elif opcao03 == '27':
+                                    os.system('clear')
+                                    print('A instalar RTLSDR Scanner\n')             
+                                    os.system('apt install rtlsdr-scanner')        
+                                    print('\nOK')
+                                elif opcao03 == '28':
+                                    os.system('clear')
+                                    print('A instalar Spooftooph\n')             
+                                    os.system('apt install spooftooph')        
+                                    print('\nOK')
+                                elif opcao03 == '29':
+                                    os.system('clear')
+                                    print('A instalar Wifi Honey\n')             
+                                    os.system('apt install wifi-honey')        
+                                    print('\nOK')
+                                elif opcao03 == '30':
+                                    os.system('clear')
+                                    print('A instalar Wifitap\n')             
+                                    os.system('apt install wifitap')        
+                                    print('\nOK')
+                                elif opcao03 == '31':
+                                    os.system('clear')
+                                    print('A instalar Wifite\n')             
+                                    os.system('apt install wifite')        
+                                    print('\nOK')
                                 elif opcao03 == '0':
                                     catmenu()
                                 else:
@@ -730,11 +1125,10 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
 
                             while cat == '4':
                                 os.system('clear')
-                                print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                                print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------
 
  (1) apache-users    (21) Parsero
  (2) Arachni         (22) plecost
@@ -769,6 +1163,326 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                                     # os.system('apt install ') ------------ Descomentar e completar comando
                                     # print('\nOK') ------------------------ Descomentar
                                     time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '2':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '3':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '4':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '5':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '6':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '7':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '8':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '9':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '10':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '11':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '12':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '13':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '14':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '15':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '16':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '17':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '18':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '19':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '20':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '21':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '22':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '23':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '24':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '25':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '26':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '27':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '28':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '29':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '30':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '31':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '32':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '33':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '34':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '35':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '36':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '37':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '38':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '39':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '40':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao04 == '41':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)                      
                                 elif opcao04 == '0':
                                     catmenu()
                                 else:
@@ -777,11 +1491,10 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                             
                             while cat == '5':
                                 os.system('clear')
-                                print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                                print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------
 
 (1) Burp Suite         (17) rtpmixsound
 (2) DNSChef            (18) sctpscan
@@ -805,12 +1518,260 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                                 opcao05 = input('↳ ')
                                 if opcao05 == '1':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '2':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '3':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '4':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '5':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '6':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '7':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '8':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '9':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '10':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '11':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '12':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '13':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '14':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '15':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '16':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '17':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '18':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '19':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '20':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '21':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '22':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '23':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '24':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '25':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '26':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '27':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '28':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '29':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '30':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '31':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao05 == '32':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)       
                                 elif opcao05 == '0':
                                     catmenu()
                                 else:
@@ -819,11 +1780,10 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
 
                             while cat == '6':
                                 os.system('clear')
-                                print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                                print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------
 
 (1) CryptCat       (9) polenum
 (2) Cymothoa      (10) PowerSploit
@@ -839,12 +1799,132 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                                 opcao06 = input('↳ ')
                                 if opcao06 == '1':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao06 == '2':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao06 == '3':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao06 == '4':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao06 == '5':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao06 == '6':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao06 == '7':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao06 == '8':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao06 == '9':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao06 == '10':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao06 == '11':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao06 == '12':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao06 == '13':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao06 == '14':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao06 == '15':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao06 == '16':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao06 == '0':
                                     catmenu()
                                 else:
@@ -853,11 +1933,10 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
 
                             while cat == '7':
                                 os.system('clear')
-                                print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                                print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------
 
 (1) CaseFile
 (2) CutyCapt
@@ -874,12 +1953,76 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                                 opcao07 = input('↳ ')
                                 if opcao07 == '1':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao07 == '2':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao07 == '3':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao07 == '4':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao07 == '5':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao07 == '6':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao07 == '7':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao07 == '8':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao07 == '9':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao07 == '0':
                                     catmenu()
                                 else:
@@ -888,11 +2031,10 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
 
                             while cat == '8':
                                 os.system('clear')
-                                print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                                print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------
 
 (1) Armitage                 (10) jboss-autopwn
 (2) Backdoor Factory         (11) Linux Exploit Suggester
@@ -909,12 +2051,140 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                                 opcao08 = input('↳ ')
                                 if opcao08 == '1':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao08 == '2':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao08 == '3':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao08 == '4':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao08 == '5':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao08 == '6':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao08 == '7':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao08 == '8':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao08 == '9':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao08 == '10':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao08 == '11':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao08 == '12':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao08 == '13':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao08 == '14':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao08 == '15':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao08 == '16':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao08 == '17':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao08 == '0':
                                     catmenu()
                                 else:
@@ -923,11 +2193,10 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
 
                             while cat == '9':
                                 os.system('clear')
-                                print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                                print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------
 
  (1) Binwalk          (11) extundelete
  (2) bulk-extractor   (12) Foremost
@@ -948,12 +2217,188 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                                 opcao09 = input('↳ ')
                                 if opcao09 == '1':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '2':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '3':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '4':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '5':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '6':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '7':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '8':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '9':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '10':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '11':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '12':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '13':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '14':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '15':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '16':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '17':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '18':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '19':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '20':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '21':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '22':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao09 == '23':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao09 == '0':
                                     catmenu()
                                 else:
@@ -962,11 +2407,10 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
 
                             while cat == '10':
                                 os.system('clear')
-                                print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                                print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------
 
 (1) DHCPig          (8) Reaver
 (2) FunkLoad        (9) rtpflood
@@ -981,12 +2425,116 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                                 opcao10 = input('↳ ')
                                 if opcao10 == '1':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao10 == '2':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao10 == '3':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao10 == '4':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao10 == '5':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao10 == '6':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao10 == '7':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao10 == '8':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao10 == '9':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao10 == '10':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao10 == '11':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao10 == '12':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao10 == '13':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao10 == '14':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao10 == '0':
                                     catmenu()
                                 else:
@@ -995,11 +2543,10 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
 
                             while cat == '11':
                                 os.system('clear')
-                                print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                                print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------
 
  (1) acccheck              (19) Maskprocessor
  (2) Burp Suite            (20) multiforcer
@@ -1025,12 +2572,292 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                                 opcao11 = input('↳ ')
                                 if opcao11 == '1':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '2':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '3':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '4':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '5':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '6':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '7':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '8':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '9':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '10':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '11':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '12':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '13':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '14':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '15':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '16':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '17':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '18':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '19':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '20':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '21':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '22':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '23':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '24':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '25':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '26':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '27':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '28':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '29':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '30':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '31':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '32':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '33':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '34':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '35':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao11 == '36':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao11 == '0':
                                     catmenu()
                                 else:
@@ -1039,11 +2866,10 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
 
                             while cat == '12':
                                 os.system('clear')
-                                print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                                print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------
 
  (1) apktool
  (2) dex2jar
@@ -1062,12 +2888,92 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                                 opcao12 = input('↳ ')
                                 if opcao12 == '1':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao12 == '2':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao12 == '3':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao12 == '4':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao12 == '5':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao12 == '6':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao12 == '7':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao12 == '8':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao12 == '9':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao12 == '10':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao12 == '11':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao12 == '0':
                                     catmenu()
                                 else:
@@ -1076,11 +2982,10 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
 
                             while cat == '13':
                                 os.system('clear')
-                                print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                                print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------
 
 (1) android-sdk
 (2) apktool
@@ -1094,12 +2999,52 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                                 opcao13 = input('↳ ')
                                 if opcao13 == '1':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao13 == '2':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao13 == '3':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao13 == '4':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao13 == '5':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao13 == '6':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao13 == '0':
                                     catmenu()
                                 else:
@@ -1108,11 +3053,10 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
 
                             while cat == '14':
                                 os.system('clear')
-                                print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                                print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------
 
 (1) Wifresti
 (2) Squid3
@@ -1122,12 +3066,20 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                                 opcao14 = input('↳ ')
                                 if opcao14 == '1':
                                     os.system('clear')
-                                    print('Indisponível de momento...\n'  # Descomentar esta linha quando comando disponivel
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
                                           'Script em actualização!')
-                                    # print('A instalar ...')             # Nome da ferramenta
-                                    # os.system('apt install ...')        # Comando para instalar
-                                    # print('OK')                         # Confirmação
-                                    time.sleep(3)
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
+                                elif opcao14 =='2':
+                                    os.system('clear')
+                                    print('Indisponível de momento...\n' # - Apagar esta linha quando comando disponivel
+                                          'Script em actualização!')
+                                    # print('A instalar ') ----------------- Descomentar e completar nome da ferramenta
+                                    # os.system('apt install ') ------------ Descomentar e completar comando
+                                    # print('\nOK') ------------------------ Descomentar
+                                    time.sleep(3) # ------------------------ Mudar para time.sleep(2)
                                 elif opcao14 == '0':
                                     catmenu()
                                 else:
@@ -1161,11 +3113,10 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
                     
                     while opcao == '3':
                         os.system('clear')
-                        print('''
-_  _ ____ _    _ ___  _  _ _  _ ___ _  _
+                        print('''\033[33m_  _ ____ _    _ ___  _  _ _  _ ___ _  _
 |_/  |__| |    | |__] |  | |\ |  |  |  |
-| \_ |  | |___ | |__] |__| | \|  |  |__|v1.0
----------- https://nuxware.gq ----------                          
+| \_ |  | |___ | |__] |__| | \|  |  |__|\033[mv1.0
+---------- https://\033[37mnux\033[34mware\033[m.gq ----------                          
 ############################################
 #                                          #
 # 1 - Adiciona o repositório kali.         #
@@ -1178,7 +3129,7 @@ _  _ ____ _    _ ___  _  _ _  _ ___ _  _
 #                                          #
 # ##########################################
 #                                          #
-# Importante - Remover sempre o            #
+# \033[31mImportante\033[m - Remover sempre o            #
 # repositório kali depois de instalar      #
 # todas as ferramentas pretendidas.        #
 # Se quiseres ficar com ele activo tens    #
