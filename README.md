@@ -7,7 +7,7 @@
 - Remove reposiório kali linux
 - Instala ferramentas do kali linux
 - Linguagem de programação: Python3
-- Linguagem de comunicação: pt-pt
+- Linguagem de comunicação: PT-PT
 
 # Requisitos
 - Python 3+
