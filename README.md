@@ -3,7 +3,7 @@
 - Instala automáticamente ferramentas do kali linux
 
 # Desenvolvimento
-- Fase beta
+- Alpha (teste)
 - Por enquanto ainda só instala ferramentas de ataque a redes wireless
 
 # Características
