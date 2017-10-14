@@ -4,7 +4,7 @@
 
 # Desenvolvimento
 - Fase beta
-- Por enquanto 
+- Por enquanto ainda só instala ferramentas de ataque a redes wireless
 
 # Características
 - Adiciona reposiório kali linux
