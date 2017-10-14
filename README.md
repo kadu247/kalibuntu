@@ -3,7 +3,7 @@
 - Instala automáticamente ferramentas do kali linux
 
 # Desenvolvimento
-- Alpha (teste)
+- Alpha (experimental)
 - Por enquanto ainda só instala ferramentas de ataque a redes wireless
 
 # Características
@@ -11,7 +11,7 @@
 - Remove reposiório kali linux
 - Instala ferramentas do kali linux
 - Linguagem de programação: Python3
-- Linguagem de comunicação: PT-PT
+- Idioma: PT-PT
 
 # Requisitos
 - Python 3+
